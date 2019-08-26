@@ -19,7 +19,7 @@ public class GM : MonoBehaviour
     private GameObject clonePaddle;
 
     // Start is called before the first frame update
-    void Start()
+    void Awake()
     {
         if (instance == null)
             instance = this;
@@ -37,15 +37,22 @@ public class GM : MonoBehaviour
 
     void CheckGameOver()
     {
-        if(bricks <1)
+        if (bricks < 1)
         {
             youWon.SetActive(true);
             Time.timeScale = .25f;
             Invoke("Reset", resetDelay);
         }
+        if (lives <1)
+        {
+            gameOver.SetActive(true);
+            Time.timeScale = .25f;
+            Invoke("Reset", resetDelay);
+        }
+       
     }
 
-    private void Reset()
+    void Reset()
     {
         Time.timeScale = 1f;
         Application.LoadLevel(Application.loadedLevel);
@@ -69,7 +76,7 @@ public class GM : MonoBehaviour
     public void DestroyBrick()
     {
         bricks--;
-        ChsckGameOver();
+        CheckGameOver();
     }
 }
 
