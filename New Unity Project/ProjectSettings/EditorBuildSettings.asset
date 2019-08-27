@@ -4,5 +4,8 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/BreakoutGame.unity
+    guid: 413618e33c6da754ca7923bd1b1051e9
   m_configObjects: {}

@@ -66,6 +66,7 @@
     <Compile Include="Assets\Scripts\Bricks.cs" />
     <Compile Include="Assets\Scripts\DeathZone.cs" />
     <Compile Include="Assets\Scripts\GM.cs" />
+    <Compile Include="Assets\Scripts\LookatMouse.cs" />
     <Compile Include="Assets\Scripts\Paddle.cs" />
     <Compile Include="Assets\Scripts\TimedDestroy.cs" />
     <Reference Include="Unity.Timeline.Editor">
