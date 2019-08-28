@@ -122,6 +122,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ballInitialVelocity: 500
+  plane: {fileID: 8011700001065959737, guid: 86da482920c76d942abb51a91427ca68, type: 3}
 --- !u!1 &515684166053677272
 GameObject:
   m_ObjectHideFlags: 0

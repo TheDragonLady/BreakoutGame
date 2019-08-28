@@ -17,7 +17,29 @@ public class Paddle : MonoBehaviour
         playerPos = new Vector3 (Mathf.Clamp (xPos, -8f, 8f), -9.5f, 0f);
         transform.position = playerPos;
 
-       
 
     }
+
+    /*private void OnCollisionEnter(Collision collision)
+    {
+        if(collision.gameObject.tag == "ball")
+        {
+            Rigidbody rb = collision.gameObject.GetComponent<Rigidbody>();
+            GameObject ball = collision.gameObject;
+
+            float collisionPosition = collision.transform.position.z;
+            float centerpoint = transform.position.z;
+
+            float magnitude = rb.velocity.magnitude;
+
+            float oppositeLength = (collisionPosition - centerpoint);
+
+            float rotation = Mathf.Atan( oppositeLength/ adjacentLength ) * Mathf.Rad2Deg;
+
+            ball.transform.rotation = Quaternion.Euler(0, rotation - 90, 0);
+
+            rb.velocity = ball.transform.forward * magnitude;
+        }
+    }*/
+
 }
