@@ -121,8 +121,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9dd2c23b736028848a2e566c1775f8b9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ballInitialVelocity: 500
-  plane: {fileID: 8011700001065959737, guid: 86da482920c76d942abb51a91427ca68, type: 3}
+  ballInitialVelocity: 700
 --- !u!1 &515684166053677272
 GameObject:
   m_ObjectHideFlags: 0

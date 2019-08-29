@@ -68,6 +68,8 @@
     <Compile Include="Assets\Scripts\GM.cs" />
     <Compile Include="Assets\Scripts\LookatMouse.cs" />
     <Compile Include="Assets\Scripts\Paddle.cs" />
+    <Compile Include="Assets\Scripts\PauseMenu.cs" />
+    <Compile Include="Assets\Scripts\SceneLoader.cs" />
     <Compile Include="Assets\Scripts\TimedDestroy.cs" />
     <Reference Include="Unity.Timeline.Editor">
       <HintPath>D:/GitRepo/BreakoutGame/New Unity Project/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
