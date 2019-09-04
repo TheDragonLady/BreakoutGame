@@ -2,8 +2,12 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+
 public class Bricks : MonoBehaviour
 {
+    /*public Color GreenColor;
+    public Color CyanColor;*/
+
     public GameObject brickParticle;
 
     void OnCollisionEnter(Collision other)
@@ -13,5 +17,10 @@ public class Bricks : MonoBehaviour
 
         Destroy(gameObject);
 
+       /* if (other.gameObject.CompareTag("Ball"))
+        {
+            transform.GetComponent<Renderer>().material.color = GreenColor;
+        }
+        */
     }
 }

@@ -6,15 +6,14 @@ using UnityEngine.UI;
 public class GM : MonoBehaviour
 {
     public int lives = 3;
-    public int bricks = 20;
+    public int bricks = 42;
     public float resetDelay = 1f;
     public Text livesText;
     public GameObject gameOver;
     public GameObject youWon;
     public GameObject bricksPrefab;
-    public GameObject paddle;
+    public GameObject Paddle;
     public GameObject deathParticles;
-    public GameObject cube;
     public static GM instance = null;
 
     private GameObject clonePaddle;
@@ -32,7 +31,7 @@ public class GM : MonoBehaviour
 
     public void Setup()
     {
-        clonePaddle = Instantiate(paddle, transform.position, Quaternion.identity) as GameObject;
+        clonePaddle = Instantiate(Paddle, transform.position, Quaternion.identity) as GameObject;
         Instantiate(bricksPrefab, transform.position, Quaternion.identity);
        
     }
@@ -72,7 +71,7 @@ public class GM : MonoBehaviour
 
     void SetupPaddle()
     {
-        clonePaddle = Instantiate(paddle, transform.position, Quaternion.identity) as GameObject;
+        clonePaddle = Instantiate(Paddle, transform.position, Quaternion.identity) as GameObject;
         
     }
 
