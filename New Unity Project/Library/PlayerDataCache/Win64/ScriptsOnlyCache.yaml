@@ -73,15 +73,15 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 9634}
     - Class: 114
-      Script: {instanceID: 10284}
+      Script: {instanceID: 10236}
     - Class: 114
-      Script: {instanceID: 10440}
+      Script: {instanceID: 10286}
     - Class: 114
-      Script: {instanceID: 10776}
+      Script: {instanceID: 10442}
     - Class: 114
-      Script: {instanceID: 10908}
+      Script: {instanceID: 10778}
     - Class: 114
-      Script: {instanceID: 14658}
+      Script: {instanceID: 10910}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -1104,6 +1104,12 @@ ScriptsOnlyBuild:
     className: TextContainer
   - hash:
       serializedVersion: 2
+      Hash: 6177a2f89b36d53e7c1656c459c26d1f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: CameraShake
+  - hash:
+      serializedVersion: 2
       Hash: 7155b50abf19d2a9c9262e2b141b3ef4
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
@@ -1660,12 +1666,6 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: PlayableTrack
-  - hash:
-      serializedVersion: 2
-      Hash: 6177a2f89b36d53e7c1656c459c26d1f
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: CameraShake
   platform: 19
   scenePathNames:
   - Assets/Scenes/Menu.unity
