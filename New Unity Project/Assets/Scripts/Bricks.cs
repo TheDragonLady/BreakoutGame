@@ -5,10 +5,12 @@ using UnityEngine;
 
 public class Bricks : MonoBehaviour
 {
-    /*public Color GreenColor;
-    public Color CyanColor;*/
 
     public GameObject brickParticle;
+
+    private void Awake()
+    {
+    }
 
     void OnCollisionEnter(Collision other)
     {
@@ -16,11 +18,6 @@ public class Bricks : MonoBehaviour
         GM.instance.DestroyBrick();
 
         Destroy(gameObject);
-
-       /* if (other.gameObject.CompareTag("Ball"))
-        {
-            transform.GetComponent<Renderer>().material.color = GreenColor;
-        }
-        */
+       
     }
 }

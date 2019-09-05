@@ -15,6 +15,7 @@ public class GM : MonoBehaviour
     public GameObject Paddle;
     public GameObject deathParticles;
     public static GM instance = null;
+    public CameraShake cameraShake;
 
     private GameObject clonePaddle;
 
@@ -78,6 +79,7 @@ public class GM : MonoBehaviour
     public void DestroyBrick()
     {
         bricks--;
+        StartCoroutine(cameraShake.Shake(.15f,.4f));
         CheckGameOver();
     }
 }

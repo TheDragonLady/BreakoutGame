@@ -4,17 +4,18 @@ using UnityEngine;
 
 public class Ball : MonoBehaviour
 {
-     public float ballInitialVelocity = 500f;
+    public float ballInitialVelocity = 500f;
 
-     private Rigidbody rb;
-     private bool ballInPlay;
+    private Rigidbody rb;
+    private bool ballInPlay;
     
 
 
     // Start is called before the first frame update
     void Awake()
      {
-         rb = GetComponent <Rigidbody> ();
+        rb = GetComponent <Rigidbody> ();
+      
      }
 
      // Update is called once per frame
@@ -46,7 +47,12 @@ public class Ball : MonoBehaviour
         }
        
      }
-     
+
+
+   /* private void OnCollisionEnter(Collision collision)
+    {
+        
+    }*/
 
 }
 
